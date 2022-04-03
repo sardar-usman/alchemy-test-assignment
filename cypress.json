@@ -1,0 +1,28 @@
+{
+  "env": {
+    "apiUrl": "http://dummy.restapiexample.com/api/v1/employees",
+    "googleMapUrl": "https://www.google.com/maps",
+    "fixtureFile": "dataFile.json"
+  },
+  "viewportWidth": 1920,
+  "numTestsKeptInMemory": 10,
+  "viewportHeight": 1580,
+  "chromeWebSecurity": false,
+  "defaultCommandTimeout": 20000,
+  "requestTimeout": 20000,
+  "responseTimeout": 20000,
+  "pageLoadTimeout": 20000,
+  "retries": 0,
+  "experimentalSourceRewriting": false,
+  "video": false,
+  "reporter": "../node_modules/mochawesome/src/mochawesome.js",
+  "reporterOptions": {
+    "reportTitle": "WordPress Automation Suite Report",
+    "charts": true,
+    "overwrite": false,
+    "html": false,
+    "json": true,
+    "reportDir": "mochawesome-report/jsonFiles"
+  },
+  "screenshotsFolder": "TestReport/assets"
+}
