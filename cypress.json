@@ -17,7 +17,6 @@
   "video": false,
   "reporter": "../node_modules/mochawesome/src/mochawesome.js",
   "reporterOptions": {
-    "reportTitle": "WordPress Automation Suite Report",
     "charts": true,
     "overwrite": false,
     "html": false,

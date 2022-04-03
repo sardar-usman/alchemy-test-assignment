@@ -12,13 +12,12 @@ describe("Test suites of Employee API", function () {
     })
       .its("body")
       .then((body) => {
-        for (var i = 0; i < body.length; i++) {
-          console.log(body);
-          console.log(body.length);
-          var obj = body[i];
-          console.log(obj[16]);
+        console.log(body);
+        console.log(body.data.length);
+        for (var i = 0; i < body.data.length; i++) {
+          var obj = body.data[i];
           if (obj.employee_name == "Michael Silva") {
-            expect(obj.employee_salary).to.eq("198500");
+            expect(obj.employee_salary).to.eq(198500);
           }
         }
       });
